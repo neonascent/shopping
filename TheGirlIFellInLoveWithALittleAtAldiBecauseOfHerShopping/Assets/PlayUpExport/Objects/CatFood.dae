@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2014-07-13T01:15:57Z</created> 										
+		<modified>2014-07-13T01:15:57Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="4099441186_a0b5a1997b_tga_img" format="bitmap" height="500" width="347" depth="32">
+			<init_from>PlayUpExport/Objects/Materials/Textures/4099441186_a0b5a1997b.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="CatFood-1-4099441186_a0b5a1997b_fx">								
+			<profile_COMMON>
+				<newparam sid="4099441186_a0b5a1997b_tga_surface">
+					<surface type="2D">
+						<init_from>4099441186_a0b5a1997b_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="4099441186_a0b5a1997b_tga_sampler">
+					<sampler2D>
+						<source>4099441186_a0b5a1997b_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<texture texture="4099441186_a0b5a1997b_tga_sampler" texcoord="diffuse_TEXCOORD"></texture> RARRR~!~
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="CatFood-1-4099441186_a0b5a1997b">									
+			<instance_effect url="#CatFood-1-4099441186_a0b5a1997b_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="24">				
+						0.16699999999999998 0.248 -0.0
+						0.0 0.0 -0.0
+						0.16699999999999998 0.0 -0.0
+						0.0 0.248 -0.0
+						0.16699999999999998 0.0 -0.048647238413258645
+						0.0 0.0 -0.048647238413258645
+						0.16699999999999998 0.248 -0.048647238413258645
+						0.0 0.248 -0.048647238413258645
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="8" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="18">			
+						0.0 0.0 1.0						0.0 -1.0 -0.0						1.0 0.0 -0.0						0.0 1.0 -0.0						0.0 0.0 -1.0						-1.0 0.0 -0.0					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="6" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="48">
+						0.776075 0.944579
+						-0.000298 0.144440
+						0.776075 0.144440
+						-0.000298 0.944579
+						1.002234 0.144440
+						1.778607 -0.012514
+						1.778607 0.144440
+						1.002234 -0.012514
+						1.002234 0.144440
+						0.776075 0.944579
+						0.776075 0.144440
+						1.002234 0.944579
+						1.002234 1.101533
+						1.778607 0.944579
+						1.778607 1.101533
+						1.002234 0.944579
+						1.778607 0.944579
+						1.002234 0.144440
+						1.778607 0.144440
+						1.002234 0.944579
+						1.778607 0.944579
+						2.004766 0.144440
+						2.004766 0.944579
+						1.778607 0.144440
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="24" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="12" material="CatFood-1-4099441186_a0b5a1997b">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	0	1
+						2	0	2
+						1	0	1
+						0	0	0
+						3	0	3
+						4	1	4
+						1	1	5
+						5	1	6
+						1	1	5
+						4	1	4
+						2	1	7
+						4	2	8
+						0	2	9
+						2	2	10
+						0	2	9
+						4	2	8
+						6	2	11
+						0	3	12
+						7	3	13
+						3	3	14
+						7	3	13
+						0	3	12
+						6	3	15
+						7	4	16
+						4	4	17
+						5	4	18
+						4	4	17
+						7	4	16
+						6	4	19
+						7	5	20
+						1	5	21
+						3	5	22
+						1	5	21
+						7	5	20
+						5	5	23
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_CatFood">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0 0 0</translate><rotate>0 0 0 0</rotate><scale sid="scale">1.000000 1.000000 1.000000</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="CatFood-1-4099441186_a0b5a1997b" target="#CatFood-1-4099441186_a0b5a1997b"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>
